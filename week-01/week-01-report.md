@@ -61,6 +61,13 @@ create your account and finish the installation
 
 ## Apache
 
+site: https://www.apachelounge.com/download/ and install the appropriate one
+
+
+new file -> path C:\Apache24  and extract all files from download there
+
+
+
 
 
 
