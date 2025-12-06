@@ -3,7 +3,7 @@ web server python php
 
 ## gia python
 
-δημιουργία φακέλου Project_Folder στο path C:\Users
+δημιουργία φακέλου Project_Folder στο path C:\
 
 
 δημιουργία αρχείου app.py ολα τα αρχεία και αποθηκευση στον παραπανω φάκελο, περνάς τον κώδικα python
@@ -30,7 +30,7 @@ web server python php
 
 https://windows.php.net/download/  install php
 
-δημιουργία φακελου PHP στο path C:\Users\PHP, extract all files there
+δημιουργία φακελου PHP στο path C:\php, extract all files there
 
 
 στον ίδιο φάκελο δημιουργείς αρχείο index.php all files με τον κώδικα php
@@ -39,7 +39,7 @@ https://windows.php.net/download/  install php
 extension php on visual code
 
 
-στο cmd -> cd C:\Users... ekei pou einai o fakelos 
+στο cmd -> cd C:\... ekei pou einai o fakelos 
 
 παιρνεις το localhost και το περνάς στον browser και εμφανιζει τα μηνύματα
 
@@ -69,16 +69,30 @@ new file -> path C:\Apache24  and extract all files from download there
 
 sto path: C:\Apache24\conf\httpd.conf open last file, make sure the line: Define SRVROOT "/Apache24" deixnei: Define SRVROOT "c:/Apache24" and make sure that the lines below are exist without #:
 
-LoadModule php_module "c:/php/php8apache2_4.dll"
+  LoadModule php_module "c:/php/php8apache2_4.dll"
 
-AddType application/x-httpd-php .php
-
-
-PHPIniDir "C:/php"
+  AddType application/x-httpd-php .php
 
 
+  PHPIniDir "C:/php"
+
+and save the file
 
 
+
+cmd as admin -> write: 
+
+cd C:\Apache24\bin
+httpd.exe -k install, service is installed
+
+
+
+in the same terminal write: httpd.exe -k start
+
+
+browser -> give localhost and then if it is ok appears the message: "It works!"
+
+(php and Apache24 in the same path C:\)
 
 
 
