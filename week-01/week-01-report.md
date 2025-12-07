@@ -48,7 +48,6 @@ Navigate to the project directory:
 
 *cd C:\Project_Folder*
 
-
 Then run:
 
 *python app.py*
@@ -71,15 +70,14 @@ Open that URL in your browser, and the page will display the messages:
 
 
 
-2️⃣ PHP Setup
-1. Download and Install PHP
+### 2️⃣ PHP Setup
+#### 1. Download and Install PHP
 
 Go to the official PHP for Windows download page:
 
-https://windows.php.net/download/
+*https://windows.php.net/download/*
 
-
-Download the Thread Safe ZIP package for your system and extract the files into a new folder named php in:
+Download the **Thread Safe ZIP package** for your system and extract the files into a new folder named **php** in:
 
 C:\
 
@@ -88,49 +86,49 @@ After extraction, your folder should look like:
 
 C:\php\
 
-2. Create the PHP File (index.php)
+#### 2. Create the PHP File (index.php)
 
-Inside the C:\php folder, create a new file named index.php using Notepad.
-Select "All Files" when saving, and paste the PHP code provided in the week-01 folder.
+Inside the C:\php folder, create a new file named **index.php** using Notepad.
+Select **"All Files"** when saving, and paste the PHP code provided in the **week-01** folder.
 
 Example structure:
 
 C:\php\
    └── index.php
 
-3. Install the PHP Extension in Visual Studio Code
+#### 3. Install the PHP Extension in Visual Studio Code
 
-Open Visual Studio Code → Go to Extensions → Install the extension named "PHP"
+Open Visual Studio Code → Go to **Extensions** → Install the extension named **"PHP"**
 (This enables syntax highlighting and support for PHP code.)
 
-4. Run the PHP Development Server
+#### 4. Run the PHP Development Server
 
-Open Command Prompt and navigate to the PHP folder:
+Open **Command Prompt** and navigate to the PHP folder:
 
-cd C:\php
+*cd C:\php*
 
 
 Start the built-in PHP development server:
 
-php -S localhost:8080
+*php -S localhost:8080*
 
 
 If everything is correct, the server will start on port 8080.
 
-5. Open the Web Page in Your Browser
+#### 5. Open the Web Page in Your Browser
 
 Open your browser and visit:
 
-http://localhost:8080
+*http://localhost:8080*
 
 
 You should now see the displayed messages:
 
-Hello!
+**Hello!**
 
-Welcome!
+**Welcome!**
 
-This is a message.
+**This is a message.**
 
 
 
