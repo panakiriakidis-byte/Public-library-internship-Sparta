@@ -202,13 +202,9 @@ When the process finishes, MySQL Workbench will be available for use.
 
 ## Apache, without XAMPP and WAMP
 
-Steps for web server:
-
-site: https://www.apachelounge.com/download/ and install the appropriate one
-
+Steps for web server: on site: https://www.apachelounge.com/download/ and install the appropriate one
 
 new file -> path C:\Apache24  and extract all files from download there
-
 
 sto path: C:\Apache24\conf\httpd.conf open last file, make sure the line: Define SRVROOT "/Apache24" deixnei: Define SRVROOT "c:/Apache24" and make sure that the lines below are exist without #:
 
@@ -219,11 +215,12 @@ sto path: C:\Apache24\conf\httpd.conf open last file, make sure the line: Define
 
   PHPIniDir "C:/php"
 
+
 and save the file
 
 
 
-cmd as admin -> write: 
+στο cmd as admin -> write: 
 
 cd C:\Apache24\bin
 httpd.exe -k install, service is installed
