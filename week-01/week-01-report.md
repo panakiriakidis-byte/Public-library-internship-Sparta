@@ -52,17 +52,17 @@ Inside VS Code, go to **Extensions** (left sidebar) and install the **Python ext
 Open the **app.py** file in VS Code and run one of the following commands:
 
 #### Option A: Through Visual Studio Code terminal
-*python app.py*
+```python app.py```
 
 #### Option B: Through Command Prompt
 
 Navigate to the project directory:
 
-```cd C:\Project_Folder```
+```
+cd C:\Project_Folder
 
-Then run:
-
-```python app.py```
+python app.py
+```
 
 ### 7. Access the Web Page
 
@@ -165,16 +165,16 @@ The following sections describe the installation steps for MySQL and Apache, as 
 ## Installation Steps (Windows)
 ### 1. Download MySQL Installer
 
-Visit the official MySQL download page:
+- Visit the official MySQL download page:
 
 ```https://dev.mysql.com/downloads/installer/```
 
 
-Download the **latest MySQL Installer** for Windows.
+- Download the **latest MySQL Installer** for Windows.
 
 ### 2. Run the Installer
 
-Open the downloaded file and choose:
+- Open the downloaded file and choose:
 
 `Full`
 
@@ -191,7 +191,7 @@ This installs:
 - Utilities and connectors required for development
 ```
 
-Then click:
+- Then click:
 
 ```Next → Execute```
 
@@ -199,13 +199,14 @@ This installs all selected products.
 
 ### 3. Complete Configuration
 
-During the setup:
+- During the setup:
+```
+  Create your **MySQL root account** (username + password)
 
-- Create your **MySQL root account** (username + password)
+  Choose the default configuration options
 
-- Choose the default configuration options
-
-- Finalize the installation
+  Finalize the installation
+```
 
 When the process finishes, MySQL Workbench will be available for use.
 
@@ -219,21 +220,21 @@ When the process finishes, MySQL Workbench will be available for use.
 ## Installation Steps:
 ### 1. Download Apache
 
-Visit the Apache Lounge download page:
+- Visit the Apache Lounge download page:
 
 ```https://www.apachelounge.com/download/```
 
 
-Download the version compatible with your system.
+- Download the version compatible with your system.
 
 ### 2. Extract Apache Files
 
-Create a new folder in the root of your C: drive:
+- Create a new folder in the root of your C: drive:
 
 `C:\Apache24`
 
 
-Extract all downloaded files into this folder so your structure becomes:
+- Extract all downloaded files into this folder so your structure becomes:
 
 ```
 C:\Apache24\bin
@@ -244,32 +245,32 @@ C:\Apache24\htdocs
 
 ### 3. Configure Apache to Work with PHP
 
-Navigate to:
+- Navigate to:
 
 `C:\Apache24\conf`
 
 
-Open the file:
+- Open the file:
 
 **httpd.conf**
 
 
-Make the following adjustments:
+- Make the following adjustments:
 
 ### ✔ Update the ServerRoot path
 
-Locate:
+- Locate:
 
 ```Define SRVROOT "/Apache24"```
 
 
-Change it to:
+- Change it to:
 
 ```Define SRVROOT "c:/Apache24"```
 
 ### ✔ Enable PHP module and configuration
-
-Ensure that the following lines exist **without the # symbol** (uncommented):
+ 
+- Ensure that the following lines exist **without the # symbol** (uncommented):
 
 ```
 LoadModule php_module "c:/php/php8apache2_4.dll"
@@ -279,15 +280,13 @@ AddType application/x-httpd-php .php
 PHPIniDir "C:/php"
 ```
 
-
-
 These lines tell Apache how to load the PHP module and where to find the PHP configuration.
 
-Save the file.
+- Save the file.
 
 ### 4. Install and Start the Apache Service
 
-Open **Command Prompt as Administrator** and run:
+- Open **Command Prompt as Administrator** and run:
 
 #### Install Apache as a service:
 ```
@@ -306,7 +305,7 @@ If everything is correct, the server will start without errors.
 
 ### 5. Test the Installation
 
-Open your browser and visit:
+- Open your browser and visit:
 
 ```http://localhost```
 
