@@ -100,6 +100,6 @@ This setup forms the **foundation for building more advanced features** in the l
 This README summarizes the **first week and overall development stack** of my internship experience.  
 
 
-## 🧠 Tools Used for assistance and code optimization
-- ChatGPT AI Tool
-- Copilot 
+## 🧠 Tools Used 
+- ChatGPT AI Tool for assistance and code optimization
+- Copilot for assistance
