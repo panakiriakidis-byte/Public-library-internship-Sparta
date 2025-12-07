@@ -167,11 +167,8 @@ This installs:
 
 ```
 - MySQL Server
-
 - MySQL Workbench
-
 - MySQL Shell
-
 - Utilities and connectors required for development
 ```
 
