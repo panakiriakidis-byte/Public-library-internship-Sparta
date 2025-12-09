@@ -66,7 +66,27 @@ new αριστερη στηλη
 create database 
 δινεις όνομα και utf8mb4_general_ci and create 
 
-μστατροπη του excel se csv και μετα import στην βαση δεδομένων. 
+μετατροπη του excel se .csv και μετα import στην βαση δεδομένων.
+
+στο import αν δεν εμφανιζει τα στοιχεια σωστα ταξινομημενα τοτε βάζεις αντι για , βαζεις ;
 
 
-(create table  δημιουργείς τις στηλες;)
+
+## επομενο βημα:
+εγκατάσταση Django 
+cmd ->python --version an einai ok tote einai egkatestimenh h python diaforetika tin katevazeis.
+
+στο ιδιο cmd as admin python -m venv venv 
+venv\scripts\activate
+
+pip install django
+
+αν κατεβηκε επιτυχώς τοτε django_admin startproject myproject που το myproject ειναι ο καινουριος φακελος που δημιουργήθηκε στο path που ειναι ο cmd 
+
+cd myproject
+
+
+python manage.py runserver
+
+
+
