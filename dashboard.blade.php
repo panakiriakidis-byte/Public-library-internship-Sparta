@@ -3,15 +3,9 @@
 @section('content')
 <style>
 
-    html, body {
-        height: 100%;
-        margin: 0;
-        overflow-y: hidden;
-    }
-
     /* Background εικόνα για όλη τη σελίδα */
     .home-wrapper {
-        padding: 40px 40px 20px 40px;
+        padding: 40px;
         position: calc(50% + 40px) center;;
         min-height: 100vh;
         background-image: url('/images/background-protokols.png');
