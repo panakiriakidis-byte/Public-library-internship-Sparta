@@ -2,10 +2,17 @@
 
 @section('content')
 <style>
+
+    html, body {
+        height: 100%;
+        margin: 0;
+        overflow-y: hidden;
+    }
+
     /* Background εικόνα για όλη τη σελίδα */
     .home-wrapper {
-        padding: 40px;
-        position: relative;
+        padding: 40px 40px 20px 40px;
+        position: calc(50% + 40px) center;;
         min-height: 100vh;
         background-image: url('/images/background-protokols.png');
         background-size: cover;
@@ -15,17 +22,6 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
-
-    /* Μολύβι επάνω δεξιά */
-    .edit-pencil {
-        position: fixed;
-        top: 20px;
-        right: 20px;
-        width: 32px;
-        height: 32px;
-        cursor: pointer;
-        z-index: 1000;
     }
 
     /* Λογότυπο βιβλιοθήκης κάτω δεξιά */
@@ -110,8 +106,6 @@
 
 <div class="home-wrapper">
 
-    <img src="/images/edit-pencil.png" alt="Edit" class="edit-pencil">
-
     <div class="home-title">
         <h1>Σύστημα Πρωτοκόλλου</h1>
         <p>Κεντρική διαχείριση εισερχόμενων και εξερχόμενων εγγράφων</p>
@@ -150,5 +144,3 @@
 <img src="/images/library-sparta-logo.png" alt="Δημόσια Κεντρική Βιβλιοθήκη Σπάρτης" class="library-logo">
 
 @endsection
-
-
